@@ -23,15 +23,30 @@ driver_fields = {
 
 chunk_fields = {
     'id': fields.Integer,
-    'product': fields.Integer,
-    'quanitty': fields.Integer,
-    'delivery': fields.Integer
+    'product': fields.String,
+    'quanitty': fields.Integer
+}
+
+client_fields = {
+    'id': fields.Integer,
+    'name': fields.String,
+    'address': fields.String,
+    'latitude': fields.Float,
+    'longitude': fields.Float
+}
+
+cdd_fields = {
+    'id': fields.Integer,
+    'name': fields.String,
+    'address': fields.String,
+    'latitude': fields.Float,
+    'longitude': fields.Float
 }
 
 delivery_fields = {
     'id': fields.Integer,
-    'cdd': fields.Integer,
-    'client': fields.Integer,
+    'cdd': fields.Nested(cdd_fields),
+    'client': fields.Nested(client_fields),
     'chunks': fields.List(fields.Nested(chunk_fields))
 }
 
@@ -112,16 +127,12 @@ class AddBooking(Resource):
     def __init__(self):
         self.reqparse = reqparse.RequestParser()
         self.reqparse.add_argument(
-            'delivery',
+            'delivery_id',
             required=True,
-            help='No delivery provided',
-            location=['form','json']
+            help='No delivery provided'
             )
         self.reqparse.add_argument(
-            'estimated_pickup_time',
-            required=True,
-            help='No pickup time provided',
-            location=['form','json']
+            'estimated_pickup_time'
             )
         super().__init__()
     
@@ -132,7 +143,7 @@ class AddBooking(Resource):
         new_booking_data['status']=1
         new_booking_data['created_at']=datetime.datetime.now
         new_booking_data['driver']=get_jwt_identity()
-        new_booking = models.Booking(**new_booking_data)
+        new_booking = models.Booking(new_booking_data)
         db.session.add(new_booking)
         db.session.commit()
         
@@ -174,10 +185,10 @@ api.add_resource(
 api.add_resource(
     CancelBooking,
     '/api/v1/cancelbooking',
-    endpoint='cancelbooking'
+    endpoint='cancel_booking'
     )
 api.add_resource(
     GetAllDeliveries,
     '/api/v1/getalldeliveries',
-    endpoint='getalldeliveries'
+    endpoint='get_all_deliveries'
     )

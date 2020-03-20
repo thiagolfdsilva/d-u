@@ -28,6 +28,7 @@ class Client(db.Model):
     address = db.Column(db.String)
     latitude = db.Column(db.Float)
     longitude = db.Column(db.Float)
+    deliveries = db.relationship('Delivery', backref='client', lazy='dynamic')
         
 class CDD(db.Model):
     __tablename__ = 'cdds'
@@ -36,6 +37,7 @@ class CDD(db.Model):
     address = db.Column(db.String)
     latitude = db.Column(db.Float)
     longitude = db.Column(db.Float)
+    deliveries = db.relationship('Delivery', backref='cdd', lazy='dynamic')
     
 #A chunk is a grouping of similar products in a given delivery
 #A delivery is made of many chunks
@@ -82,6 +84,8 @@ class Product(db.Model):
     name = db.Column(db.String)
     fit = db.Column(db.Integer) #size-related, how many of those "fit" in a standard measure
     chunks = db.relationship('Chunk', backref='product', lazy='dynamic')
+    def __repr__(self):
+        return '%r' % (self.name)
     
 class Vehicle(db.Model):
     __tablename__ = 'vehicles'
