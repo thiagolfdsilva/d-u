@@ -1,0 +1,11 @@
+sqlalchemy
+flask
+passlib
+flask_sqlalchemy
+flask_jsglue
+flask_session
+flask_migrate
+gspread
+oauth2client
+pyopenssl
+pandas

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ambflex",
+  "private_key_id": "698b295b7fd708ffc4085c27cf72947577c0b4fe",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC1QzyILitDw2lX\naNBCZ2qZSRJQjGZDdA2LTgjtkPgOdI6c7Eaq2cHxqipqBTtAMoKTdN5AkmZ7T3Jp\nJ+TW7f1vb9hRPcW+TFqJSUS6cN0465izRW0L34L5kkh5ROlaluglUoQ+hORC+HUx\npjUeKE8fFahMf8/LihxfJQ4/XJDGV7YaPrWcfQYWP7C4i0oHAXqbp2t/KwrIUPY/\nN8RGTPsMWc+zwnAG62f2nsmSLFFCcFD9e76EIhIpHYTu8Yb41k90QtKkRYeyixHp\njIbpdCPIMzK31t8c0HvU+e3NMxWGGBjz7pXK4QbC+TzwP7ZLINlS9pFUn5QZp8wI\n90Aa8DWPAgMBAAECggEAHM2YWtNrUJNGs/sVzNd+Gul/nYkR3vocBNzbklSM9k8T\nMmBhQljj9rDhmINITQU5tpDFmGErI8EWHxuVw4mB0illqFM2juy3HkWkRDQXEyps\n01/e2hokR+A04ABRTHHaZcPc+8pGM1Yj2UXd/vLMz9WzLqTIskE6DOxofS0KXFni\nuHvvGmEeWCy25kFH5otvFP+mnEoPZ1GkhaXNmBkAyLGlY5IuzNJUL/MdDshG559e\nrJnxTth8YqoaYt9D1ZTt6Z79DlQRWA38SJbh/5Oeozp2FDN0SvPWveGE9Wm1zlVZ\n0qLEYzzYJ2IAX75MBVPL/6Qaj/kbxIjHzSQHlfQtgQKBgQD0JVMvYWHZKVkSaKRD\nsiUxW2c/Gv4539WuVhhuKqS4ev1UY0coYcSc80KXdEBmzQo9fkNHyX6qM9VtHWNw\nxQguev0UqWPRd+LHZYRdHCW8QSrG2wtNr/gLt6R4xZ6L0XCoCKIw3VH/IuQ4mmUh\ntJCrbw5JTnTrkpIX3w+ZXpzc7wKBgQC+EEnhnsHf83Z/Ksdb4dTrrh2SNm99o3pZ\nxlrksBIKYVEfZVZ+4aU4M2k/sFmcF7vDQtTPNLgS+TPo5D8DQNCmDHk//OtCAEQv\nBMPojJ10rsewSIa5uupj+lJ8k/pT6yYu/WBhCzlNPJ5KWh1aCteInNysapGdhgnx\n9yvTIbVxYQKBgQCiG2JndFae9Zhh478l/9Q4OIOOYCLrVJcyAZKJG6FxqKAqdxzZ\nUElXGSJfI95bI8un1v1fXgfPhUkyATB0wS7Uhe8i1/IiNGMMmHhRxo27uN1pWing\nNHYTeaUoV7cVCUSvHcRrg5idOpKkjseVoKnqWnv26rQxcom0dfSKlkq7WwKBgQCR\nUucKyla3I/LQ3Sa9zHj/E4ysxU6OJDdi+VV6Ul4Y7bwXY2a1cVbhF/47ol2CCmuY\nqzsIi+jLKRxV0F+V3zMqI5N6J6rCNm3r/ZrF7u5dz14EHhBVZuPdOgNkGcln7P6v\nIzFUQj64HcdyVmDm/i8616Wrd3iLl3d3OWSa9MVFQQKBgQC188HkYWf2buk8OOMO\nsjsIzdLIGWEQFgOLyU98xA6M6kU3oGwfMW893JSIrxv4v2KJL476odL6x+ftuBcp\nhLZMzAcynuypQQ50TrW4Rndz4AGVJZMmr8YigmX97S1SbeJL14A4qFvHPVE14+FZ\nzakBnTWLnAIdd8FeNiF/OABoHA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ambflex@ambflex.iam.gserviceaccount.com",
+  "client_id": "110486848292798230426",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ambflex%40ambflex.iam.gserviceaccount.com"
+}
